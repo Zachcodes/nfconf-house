@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css"> 
+    <title>Building a house</title>
+</head>
+<body>
+    <div class="button-container">
+        <button 
+        id="wall-button"
+        onclick="addWalls()">Add/Remove Walls</button>
+        <button 
+        id="door-button"
+        onclick="addDoors()">Add/Remove Doors</button>
+        <button 
+        id="window-button"
+        onclick="addWindows()">Add/Remove Windows</button>
+        <button 
+        id="roof-button"
+        onclick="addRoof()">Add/Remove Roof</button>
+    </div>
+    <div class="house-container">
+        <div class="roof hidden" id="roof-id"></div>
+        <div class="walls hidden" id="walls-id">
+            <div class="windows left hidden" id="window-left"></div>
+            <div class="windows right hidden" id="window-right"></div>
+            <div class="doors hidden" id="doors-id"></div>
+        </div>
+    </div>
+    <div class="ground"></div>
+    <script src="index.js"></script>
+</body>
+</html>
